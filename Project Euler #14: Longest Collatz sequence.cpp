@@ -32,6 +32,12 @@ int main() {
     memo[1] = 1;
     int t;
     cin >> t;
+    int count = 2;
+    // fill for powers of 2!
+    for(long long i = 2; i <= 5000001; i *= 2){
+        memo[i] = count;
+        count++;
+    }
     while(t--){
         int n;
         cin >> n;
