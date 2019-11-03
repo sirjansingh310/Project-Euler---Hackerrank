@@ -20,7 +20,7 @@ int findNumberOfConsecutivePrimes(int a, int b){
     int equation = b; // for X = 0.
     while(isNumberPrime(equation)){
         X++;
-        equation = X * X + a * X + b;// x^2 + ax + b
+        equation = X * X + a * X + b;
     }
     return X + 1; // number of consecutive primes
 }
