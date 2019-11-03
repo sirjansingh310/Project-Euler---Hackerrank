@@ -30,7 +30,7 @@ int main() {
     int N;
     cin >> N;
     // x^2 + ax + b. a has to be odd and b has to be prime so that the
-    // sequence can generate primes of values 0 to x. substitute values x = 0 and x = 1 to see. a is even so it can be + or -. b has to be + as it has to be prime.
+    // sequence can generate primes of values 0 to x. substitute values x = 0 and x = 1 to see. a is odd so it can be + or -. b has to be + as it has to be prime.
     int maxPrimesGenerated = 1;
     int result_a, result_b;
     for(int a = 1; a <= N; a += 2){
